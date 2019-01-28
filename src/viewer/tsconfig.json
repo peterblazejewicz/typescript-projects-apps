@@ -1,0 +1,9 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "module": "none",
+        "composite": true,
+        "declaration": true,
+        "outFile": "../../build/viewer/viewer.js"
+    }
+}
