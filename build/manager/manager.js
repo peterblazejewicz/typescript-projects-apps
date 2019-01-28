@@ -1,4 +1,5 @@
 "use strict";
+/// <reference path="../model/user.ts" />
 var manager;
 (function (manager) {
     var app;
@@ -10,10 +11,7 @@ var manager;
                     this.container = container;
                 }
                 AppComponent.prototype.init = function () {
-                    var user = {
-                        firstName: "Jonh",
-                        lastName: "Doe"
-                    };
+                    var user = { firstName: "Jonh", lastName: "Doe" };
                     var div = document.createElement("div");
                     div.textContent = "Hello " + user.firstName + " " + user.lastName + "!";
                     this.container.appendChild(div);
@@ -24,4 +22,16 @@ var manager;
         })(components = app.components || (app.components = {}));
     })(app = manager.app || (manager.app = {}));
 })(manager || (manager = {}));
-//# sourceMappingURL=app.component.js.map
+/// <reference path="./app/components/app.component.ts"/>
+var apps;
+(function (apps) {
+    var Viewer;
+    (function (Viewer) {
+        window.addEventListener("load", function (e) {
+            var target = document.querySelector("div");
+            var app = new manager.app.components.AppComponent(target);
+            app.init();
+        });
+    })(Viewer = apps.Viewer || (apps.Viewer = {}));
+})(apps || (apps = {}));
+//# sourceMappingURL=manager.js.map

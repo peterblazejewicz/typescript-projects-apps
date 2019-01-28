@@ -2,8 +2,11 @@
     "extends": "../../tsconfig.json",
     "compilerOptions": {
         "module": "none",
-        "composite": true,
-        "declaration": true,
+        "target": "es5",
+        "outDir": "../../build/viewer/",
         "outFile": "../../build/viewer/viewer.js"
-    }
+    },
+    "files": [
+        "main.ts"
+    ]
 }

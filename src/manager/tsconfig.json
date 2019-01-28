@@ -2,8 +2,11 @@
     "extends": "../../tsconfig.json",
     "compilerOptions": {
         "module": "none",
-        "composite": true,
-        "declaration": true,
+        "target": "es5",
+        "outDir": "../../build/manager/",
         "outFile": "../../build/manager/manager.js"
-    }
+    },
+    "files": [
+        "main.ts"
+    ]
 }
