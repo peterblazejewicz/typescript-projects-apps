@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "declaration": true,
+        "module": "none",
+        "target": "es5",
+        "outDir": "../../build/shared/",
+        "outFile": "../../build/shared/shared.js"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": []
+}

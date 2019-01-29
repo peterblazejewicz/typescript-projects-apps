@@ -5,16 +5,9 @@ declare namespace shared.components {
         abstract init(): void;
     }
 }
-declare namespace manager.model {
+declare namespace shared.model {
     interface User {
         firstName: string;
         lastName: string;
     }
-}
-declare namespace manager.app.components {
-    class AppComponent extends shared.components.DefaultAppComponent {
-        init(): void;
-    }
-}
-declare namespace apps.Viewer {
 }
