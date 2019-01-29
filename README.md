@@ -6,7 +6,13 @@ Say you have a plain, non-yet ES6 migrated, TypeScript (mixed with JavaScript) p
 
 The new TypeScript `3.*` features like projects and `--build` option, allow to split such pool of applications into modern hierarchy, similar to monorepo concepts like one imposed by Narwal's `nx` schematics.
 
-## Using
+## Using sample
+
+The sample consists of two (atm) application-like projets: `Viewer` and `Manager`. These apps share the common code from the `Shared` projects. To setup dependencies between projets the new (in 3.*) projects features of TypeScript is being used, together with `--build` option:.
+
+See for details:
+[Project References](https://www.typescriptlang.org/docs/handbook/project-references.html)
+[Controlling output structure](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/#controlling-output-structure)
 
 ### Building manager app
 
